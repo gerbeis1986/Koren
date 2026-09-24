@@ -262,6 +262,18 @@
       }
     });
   </script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
+<script>
+  const supabaseUrl = "https://pgcnbqgvbnowzkenfkvn.supabase.co";
+   const supabasePublishableKey = "sb_publishable_AMs4ASC6zcKyNzD4WxcAZA_E7OeCxbh";
+
+  const supabase = window.supabase.createClient(
+    supabaseUrl,
+    supabasePublishableKey
+  );
+
+  console.log("Supabase подключён");
+</script>
 </body>
 </html>
